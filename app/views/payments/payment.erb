@@ -1,0 +1,9 @@
+<%= form_for :sim_transaction, :url => AuthorizeNet::SIM::Transaction::Gateway::TEST do |f| %>
+  <%= sim_fields(@sim_transaction) %>
+  <%= label_tag 'x_amount', "Total: #{number_to_currency(@amount)}" %>
+  <%= hidden_field_tag("x_invoice_num", rand(10000), {:id => "x_invoice_num"}) %>
+  <%= hidden_field_tag("x_cust_id", 1, {:id => "x_cust_id"}) %>
+  <%= hidden_field_tag("x_email", 'rkumar@enbake.com', {:id => "x_email"}) %>
+  <br />
+  <%= f.submit 'Purchase'%>
+<% end %>

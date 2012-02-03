@@ -1,0 +1,8 @@
+default:
+  api_login_id: 8hLDJQs24mF
+  api_transaction_key: 5k95wc3Q6Xq6BsN5
+  merchant_hash_value: 8hLDJQs24mF
+
+development: 
+test: 
+production: 
