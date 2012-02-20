@@ -4,4 +4,10 @@ http://blog.enbake.com/authorize-net-and-its-integration-in-rails-3-x-applicatio
 
 git clone git@github.com:enbake/authorize-net-integration-tutorial.git
 
+bundle install
+
+Configure the database and then run migrations:
+
 rake db:migrate
+
+rake db:seed
